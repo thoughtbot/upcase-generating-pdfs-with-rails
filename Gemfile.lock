@@ -37,9 +37,6 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    airbrake (5.0.1)
-      airbrake-ruby (~> 1.0)
-    airbrake-ruby (1.0.0)
     arel (6.0.3)
     ast (2.2.0)
     autoprefixer-rails (6.2.1)
@@ -153,7 +150,6 @@ GEM
       slop (~> 3.4)
     pry-rails (0.3.4)
       pry (>= 0.9.10)
-    puma (2.15.3)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
@@ -270,7 +266,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  airbrake
   autoprefixer-rails
   awesome_print
   bourbon (~> 4.2.0)
@@ -294,7 +289,6 @@ DEPENDENCIES
   normalize-rails (~> 3.0.0)
   pg
   pry-rails
-  puma
   quiet_assets
   rack-canonical-host
   rack-timeout
