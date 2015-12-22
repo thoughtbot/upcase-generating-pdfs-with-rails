@@ -16,13 +16,19 @@ class Download
     "Invoice #{invoice.number}.pdf"
   end
 
+  def render_attributes
+    {
+      template: "invoices/pdf",
+      layout: "invoice_pdf",
+      locals: { invoice: invoice }
+    }
+  end
+
   private
 
   attr_reader :invoice
 
   def as_html
-    render template: "invoices/pdf",
-      layout: "invoice_pdf",
-      locals: { invoice: invoice }
+    render render_attributes
   end
 end

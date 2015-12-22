@@ -7,6 +7,8 @@
 @import "base/base";
 @import "refills/flashes";
 
+$row-stripe: #d2d2d2;
+
 .container {
   margin: 30px auto;
   max-width: 980px;
@@ -14,6 +16,8 @@
 
 
 .line-items {
+  margin-bottom: 20px;
+
   .quantity {
     width: 5%;
   }
@@ -28,5 +32,28 @@
 
   .unit-price, .total {
     width: 10%;
+  }
+
+  tbody tr:nth-child(2n) {
+    background: $row-stripe;
+  }
+
+  tbody td:first-child {
+    padding-left: 10px;
+  }
+}
+
+header {
+  margin-bottom: 40px;
+
+  .contact {
+    float: right;
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .logo {
+    max-height: 70px;
   }
 }
