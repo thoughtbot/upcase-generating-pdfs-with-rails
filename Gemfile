@@ -48,6 +48,7 @@ group :test do
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
+  gem "pdf-reader"
   gem "shoulda-matchers"
   gem "simplecov", require: false
   gem "timecop"
