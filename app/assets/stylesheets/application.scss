@@ -6,3 +6,27 @@
 @import "neat";
 @import "base/base";
 @import "refills/flashes";
+
+.container {
+  margin: 30px auto;
+  max-width: 980px;
+}
+
+
+.line-items {
+  .quantity {
+    width: 15%;
+  }
+
+  .item-number {
+    width: 15%;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .unit-price, .total {
+    width: 10%;
+  }
+}

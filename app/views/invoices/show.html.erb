@@ -1,0 +1,28 @@
+<table class="line-items">
+  <thead>
+    <tr>
+      <th class="quantity">Qty</th>
+      <th class="item-number">Item #</th>
+      <th class="description">Description</th>
+      <th class="unit-price">Unit Price</th>
+      <th class="total">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @invoice.line_items.each do |line_item| %>
+      <tr>
+        <td><%= line_item.quantity %></td>
+        <td><%= line_item.product.item_number %></td>
+        <td><%= line_item.product.description %></td>
+        <td><%= number_to_currency(line_item.product.price) %></td>
+        <td><%= number_to_currency(line_item.product.price * line_item.quantity) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div class="notes">
+  <h3>Notes</h3>
+  <p><%= @invoice.notes %></p>
+</div>
+

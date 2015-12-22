@@ -1,0 +1,9 @@
+<h1>Invoices</h1>
+
+<% @invoices.each do |invoice| %>
+  <ul>
+    <li>
+      <%= link_to invoice.number, invoice %> - <%= invoice.line_items.count %> lines -- <%= invoice.date %>
+    </li>
+  </ul>
+<% end %>
