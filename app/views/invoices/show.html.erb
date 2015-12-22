@@ -1,3 +1,8 @@
+<%= link_to "Download PDF",
+  invoice_download_path(@invoice, format: "pdf"),
+  target: "_blank",
+  class: "download" %>
+
 <table class="line-items">
   <thead>
     <tr>
@@ -25,4 +30,3 @@
   <h3>Notes</h3>
   <p><%= @invoice.notes %></p>
 </div>
-
