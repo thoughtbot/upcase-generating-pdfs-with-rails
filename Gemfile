@@ -57,4 +57,5 @@ end
 
 group :staging, :production do
   gem "rack-timeout"
+  gem "wkhtmltopdf-heroku"
 end
