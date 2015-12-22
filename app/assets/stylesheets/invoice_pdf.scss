@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import "normalize-rails";
+@import "bourbon";
+@import "base/grid-settings";
+@import "neat";
+@import "base/base";
+@import "refills/flashes";
+
+.container {
+  margin: 30px auto;
+  max-width: 980px;
+}
+
+
+.line-items {
+  .quantity {
+    width: 5%;
+  }
+
+  .item-number {
+    width: 20%;
+  }
+
+  .description {
+    width: 55%;
+  }
+
+  .unit-price, .total {
+    width: 10%;
+  }
+}
